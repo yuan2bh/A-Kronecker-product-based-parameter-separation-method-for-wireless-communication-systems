@@ -12,4 +12,24 @@ Key words: wireless channel; power amplifier nonlinearity; parameter separation;
 The used memory polynomial (MP) model of a nonlinear power amplifier (PA) with memory is described as
 ![image](https://github.com/user-attachments/assets/8df76466-2483-48fb-ba2b-ff53b1d5e586)  
 (Equ. 2 in the published paper)
+where P and M are the nonlinear order and memory length respectively, and bp,m is the coefficients.
+
+The main used functions:
+function [s_cp] = obtain_train();
+% The training sequence is based on the IEEE802.11a long training sequence samples, amplified and calibrated with an output power of 25dBm after amplification.
+
+function [xn] = dn_WH_xn(dn,mem);
+% Baseband input symbols after nonlinear Winner Hammerstein's (WH) PA are xn;
+% dn: input;
+% mem: 1 --- the PA with memory; 0 --- the PA without memory.
+
+function [D,GMPmode] = P_MP_GMP_onlyOdd_D(dn,G,M,P);
+% D: Nonlinear data matrix constructed based on the input dn of the GMP model;
+% GMPmode: 'GMP', 'MP', 'P';  
+% dn: input vector;
+% G: delay depth; 
+% M: memory depth; 
+% P: nonlinear order. 
+
+One of the entries is main_P.m. The run results correspond to Figure 7 in the published paper:
 
