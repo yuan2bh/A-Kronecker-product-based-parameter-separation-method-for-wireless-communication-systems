@@ -11,7 +11,7 @@ Key words: wireless channel; power amplifier nonlinearity; parameter separation;
 
 The used memory polynomial (MP) model of a nonlinear power amplifier (PA) with memory is described as
 ![image](https://github.com/user-attachments/assets/8df76466-2483-48fb-ba2b-ff53b1d5e586)  
-(Equ. 2 in the published paper)
+(Equ. 2 in the published paper)  
 where P and M are the nonlinear order and memory length respectively, and bp,m is the coefficients.
 
 The main used functions:
