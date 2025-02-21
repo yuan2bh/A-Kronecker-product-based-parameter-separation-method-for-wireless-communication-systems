@@ -32,4 +32,14 @@ function [D,GMPmode] = P_MP_GMP_onlyOdd_D(dn,G,M,P);
 % P: nonlinear order. 
 
 One of the entries is main_P.m. The run results correspond to Figure 7 in the published paper:
+![image](https://github.com/user-attachments/assets/096072f4-e6ac-4781-a4b5-f70e281afe7c)
+One result of main_P.m with MATLAB R2022a:
+![image](https://github.com/user-attachments/assets/9b78ba89-72a9-4a5c-a073-55b68104d7fa)
 
+The other entries is main_MP.m. The run results correspond to Figure 8 in the published paper:
+![image](https://github.com/user-attachments/assets/4e8c03a1-7308-4f80-bdc0-d9508f7475fa)
+One result of main_MP.m with MATLAB R2022a:
+![image](https://github.com/user-attachments/assets/3fa43b23-dafc-4bc9-a256-db38c15464a1)
+
+
+The results of the runs may not be identical, with possible reasons being the randomness of the noise, the lack of MontCarlo time or the version of Matlab etc. However, the trend of the results is the same.
